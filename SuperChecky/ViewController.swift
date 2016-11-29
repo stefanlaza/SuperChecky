@@ -9,11 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var UIViewOfUserImg: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        UIViewOfUserImg.layer.cornerRadius = UIViewOfUserImg.frame.size.height / 2
+        //radius od kruga je 50% od height
     }
 
-    
 }
 

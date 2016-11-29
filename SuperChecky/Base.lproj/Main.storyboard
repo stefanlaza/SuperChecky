@@ -30,11 +30,6 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="T6K-k7-OWy" secondAttribute="height" multiplier="1:1" id="33F-Sw-Nzs"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="50"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -108,6 +103,9 @@
                             <constraint firstItem="fuo-QK-90K" firstAttribute="top" secondItem="wFT-cY-GSo" secondAttribute="bottom" id="ylX-J9-P7v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UIViewOfUserImg" destination="wFT-cY-GSo" id="qkt-5V-5ji"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
